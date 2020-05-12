@@ -5,5 +5,5 @@ before_install:
     - docker build -t s-kukkar/datastructure-docker -f Dockerfile .
 
 script:
-    - docker run s-kukkar/datastructure-docker go test ./... -v -coverage
+    - docker run s-kukkar/datastructure-docker go test ./... -v
 

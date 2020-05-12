@@ -13,17 +13,17 @@ func TestTwoSumProblem(t *testing.T) {
 }
 
 
-func TestSearchInRotatedArray(t *testing.T) {
+// func TestSearchInRotatedArray(t *testing.T) {
 
-	input := []int{4, 5, 6, 7, 8, 9, 1, 2, 3} 
-	search := 2
-	value :=  SearchInRotatedArray(input,search)
-	if value != search {
-		t.Errorf("failed expected %d recieved %d",search,value)
-	}else {
-		t.Logf("success")
-	}
-}
+// 	input := []int{4, 5, 6, 7, 8, 9, 1, 2, 3} 
+// 	search := 2
+// 	value :=  SearchInRotatedArray(input,search)
+// 	if value != search {
+// 		t.Errorf("failed expected %d recieved %d",search,value)
+// 	}else {
+// 		t.Logf("success")
+// 	}
+// }
 
 
 func TestSoldierMeadalDistribution(t *testing.T) {
