@@ -1,0 +1,10 @@
+sudo : required
+services:
+    - docker
+before_install:
+    - docker build -t s-kukkar/datastructure-docker -f Dockerfile .
+    - docker run s-kukkar/datastructure-docker /go/src/personell/datastructure-algorithem.test
+
+script:
+    - docker run s-kukkar/datastructure-docker go test ./... -v -coverage
+

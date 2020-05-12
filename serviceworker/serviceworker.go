@@ -1,5 +1,9 @@
 package serviceworker
 
+import (
+	"sync"
+)
+
 type Worker struct {
 	TotalGoroutines int32
 	Working int32

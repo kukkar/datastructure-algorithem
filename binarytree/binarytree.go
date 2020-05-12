@@ -6,11 +6,11 @@ func FindMaxDepth(tree *TreeNode)int {
 		return 0
 	}
 
-	lheight := lheight(tree.LeftNode)
-	rheight := rheight(tree.RightNode)
+	lheight := height(tree.LeftNode)
+	rheight := height(tree.RightNode)
 
-	leftMax := FindMaxDepth(tree.Left)
-	rightMax := FindMaxDepth(tree.Right)
+	leftMax := FindMaxDepth(tree.LeftNode)
+	rightMax := FindMaxDepth(tree.RightNode)
 	return max(lheight+rheight,max(leftMax,rightMax))
 }
 
